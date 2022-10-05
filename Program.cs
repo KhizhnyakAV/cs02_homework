@@ -1,8 +1,7 @@
-﻿Console.WriteLine("Программа принимает трехзначное число и выводит вторую цифру. Введите число:");
+﻿// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным");
 
 string input = Console.ReadLine();
-int lengthN = input.Length;
 int N = int.Parse(input);
-int two = ((N / 10) % 10);
 
-if (lengthN != 3) {System.Console.WriteLine("Введенное число не является трехзначным");} else System.Console.WriteLine($"Вторая цифра числа: {two}");
+if ((N == 6) || (N == 7)) {System.Console.WriteLine("Да");} else System.Console.WriteLine("Нет");
